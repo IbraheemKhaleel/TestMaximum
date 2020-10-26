@@ -3,28 +3,52 @@ package com.bridgelabz.TestMaximum;
 public class TestMaximum {
 	
 
-	public boolean computeFirtsPositionMaximum(Integer i, Integer j, Integer k) {
+	public boolean computeFirtsPositionIntegerMaximum(Integer firstValue, Integer secondValue, Integer thirdValue) {
 	
-		if(i.compareTo(j) > 0 && i.compareTo(k) > 0)
+		if(firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0)
 			return true;
 		else
 			return false;
 	}
 	
-	public boolean computeSecondPositionMaximum(Integer i, Integer j, Integer k) {
+	public boolean computeSecondPositionIntegerMaximum(Integer firstValue, Integer secondValue, Integer thirdValue) {
 		
-		if(j.compareTo(i) > 0 &&  j.compareTo(k) > 0)
+		if(secondValue.compareTo(firstValue) > 0 &&  secondValue.compareTo(thirdValue) > 0)
 			return true;
 		else
 			return false;
 	}
 
-		public boolean computeThirdPositionMaximum(Integer i, Integer j, Integer k) {
+	public boolean computeThirdPositionIntegerMaximum(Integer firstValue, Integer secondValue, Integer thirdValue) {
 			
-			if(k.compareTo(j) > 0 && k.compareTo(i) > 0)
-				return true;
-			else
-				return false;
+		if( thirdValue.compareTo(secondValue) > 0 &&  thirdValue.compareTo(firstValue) > 0)
+			return true;
+		else
+			return false;
+	}
+	
+	public boolean computeFirstPositionFloatMaximum(Float firstValue, Float secondValue, Float thirdValue) {
+		
+		if(firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0)
+			return true;
+		else
+			return false;
+	}
+	
+	public boolean computeSecondPositionFloatMaximum(Float firstValue, Float secondValue, Float thirdValue) {
+		
+		if(secondValue.compareTo(firstValue) > 0 &&  secondValue.compareTo(thirdValue) > 0)
+			return true;
+		else
+			return false;
+	}
+	
+	public boolean computeThirdPositionFloatMaximum(Float firstValue, Float secondValue, Float thirdValue) {
+		
+		if( thirdValue.compareTo(secondValue) > 0 &&  thirdValue.compareTo(firstValue) > 0)
+			return true;
+		else
+			return false;
 	}
 
 }
