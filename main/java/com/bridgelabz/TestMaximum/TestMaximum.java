@@ -1,11 +1,9 @@
 package com.bridgelabz.TestMaximum;
 
 public class TestMaximum<E extends Comparable<E>> {
-	
+
 	E firstValue , secondValue , thirdValue ;
-	
-	
-	
+
 	public TestMaximum(E firstValue, E secondValue, E thirdValue) {
 		super();
 		this.firstValue = firstValue;
@@ -26,8 +24,8 @@ public class TestMaximum<E extends Comparable<E>> {
 		if(thirdValue.compareTo(maximum) > 0 ) {
 			maximum = thirdValue;
 		}
-		return maximum ;	
-	}	
-	
+		return maximum ;
+	}
+
 }
-	
+
